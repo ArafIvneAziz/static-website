@@ -1,0 +1,523 @@
+/*-------- 17. Others style ---------*/
+/*--- counter ---*/
+.counter-betting-area {
+    position: relative;
+    padding-bottom: 50px;
+    .counter-wrapper {
+        display: flex;
+        .counter-content {      
+            h2.counter-title {
+                position: relative;
+                font-family: var(--fontart2);
+                color: var(--white);
+                font-weight: bold;
+                margin-bottom: 15px;
+                margin-top: 25px;
+                &:before {
+                    content: '';              
+                    width: 64px;   
+                    border-radius: 5px;
+                    margin-bottom: 20px;
+                    border-top: 5px solid #FE3C04;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            span {
+                font-size: 18px;
+                line-height: 28px;
+                font-family: var(--fontart2);
+                text-transform: capitalize;
+                color: var(--white);
+            }
+        }
+    }
+}
+/*--- end counter ---*/
+
+/*--- betting process ---*/
+.betting-process-area {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media #{$lg-layout} {                                       
+        padding-top: 80px;
+        padding-bottom: 80px;         
+    }
+    @media #{$md-layout} {                                       
+        padding-top: 60px;
+        padding-bottom: 60px;         
+    }
+    @media #{$xs-layout} {                                       
+        padding-top: 50px;
+        padding-bottom: 50px;         
+    }
+    .betting-wrapper {
+        .betting-title {
+            text-align: center;
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+    .betting-process-content {
+        h3 {
+            font-family: var(--fontart2);
+            color: var(--white);
+            font-weight: bold;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+        }
+        p {
+            font-family: var(--fontkitchen2);
+            color: var(--white);          
+            text-transform: capitalize;
+            margin: auto;
+            max-width: 310px;
+        }
+    }
+}
+/*--- end betting process ---*/
+
+/*--- betting features ---*/
+.betting-features-area {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-image: url(../images/service/betting-features-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media #{$lg-layout} {                                       
+        padding-top: 80px;
+        padding-bottom: 60px;         
+    }
+    @media #{$md-layout} {                                       
+        padding-top: 60px;
+        padding-bottom: 60px;         
+    }
+    @media #{$xs-layout} {                                       
+        padding-top: 50px;
+        padding-bottom: 50px;         
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(53, 0, 123, 0.6);
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 0;
+    }
+    .betting-features-content {
+        position: relative;
+        z-index: 1;
+        @media #{$md-layout} {                                                 
+            padding-bottom: 30px;         
+        }
+        @media #{$xs-layout} {                                                 
+            padding-bottom: 30px;         
+        }
+        span {
+            display: block;
+            font-family: var(--fontart2);
+            color: #FE3C04;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+        }
+        h2 {
+            font-family: var(--fontart2);
+            color: var(--white);
+            font-weight: bold;
+            text-transform: capitalize;
+            margin-bottom: 30px;          
+        }
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            max-width: 300px;
+            font-family: var(--fontkitchen2);
+            color: var(--white);
+            text-transform: capitalize;
+            margin-bottom: 50px;
+        }
+        .features-list {
+            margin-bottom: 50px;
+            ul {
+                li {
+                    display: flex;
+                    gap: 15px;
+                    margin-bottom: 20px;
+                    i {
+                        font-size: 10px;
+                        color: #FE3C04;
+                        margin-top: 8px;
+                    }
+                    a {
+                        font-size: 16px;
+                        line-height: 26px;
+                        text-transform: capitalize;
+                        color: var(--white);
+                        font-family: var(--fontkitchen2);
+                    }
+                }
+            }
+        }
+    }
+    .features-service-main {
+        display: flex;
+        @media #{$ms-layout} {                                       
+            flex-direction: column;                 
+        }
+        .features-service-wrapper {
+            .features-service {
+                position: relative;           
+                padding: 40px;
+                border-radius: 15px;
+                z-index: 1;
+                margin-bottom: 20px;
+                background-color: #35007b;
+                @media #{$lg-layout} {                                       
+                    padding: 25px;                     
+                }
+                img {
+                    margin-bottom: 20px;
+                }
+                h3 {
+                    font-family: var(--fontart2);
+                    color: var(--white);
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-family: var(--fontkitchen2);
+                    color: var(--white);             
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+/*--- end betting features ---*/
+/*--- tipsters ---*/
+.tipsters-area {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media #{$lg-layout} {                                       
+        padding-top: 80px;
+        padding-bottom: 80px;         
+    }
+    @media #{$md-layout} {                                       
+        padding-top: 60px;
+        padding-bottom: 60px;         
+    }
+    @media #{$xs-layout} {                                       
+        padding-top: 50px;
+        padding-bottom: 50px;         
+    }
+    .betting-wrapper {
+        margin-bottom: 125px;
+        @media #{$md-layout} {                                       
+            margin-bottom: 50px;
+        }
+        @media #{$xs-layout} {                                                 
+            margin-bottom: 30px;                
+        }
+        .betting-title {
+            text-align: center;
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+    .tipsters-wrapper {
+        background-color: #35007b;
+        border-radius: 20px;
+        @media #{$md-layout} {                                       
+            &:nth-child(1) {
+                margin-bottom: 30px;
+            }   
+        }
+        @media #{$xs-layout} {                                                 
+            margin-bottom: 30px;                   
+        }
+        .tipsters-img {
+            img {
+                background-color: #230069;
+                border-radius: 50%;
+                border: 8px solid #FE3C04;
+                margin-top: -75px;
+                @media #{$md-layout} {                                       
+                    margin-top: 0;         
+                }
+                @media #{$xs-layout} {                                       
+                    margin-top: 0;         
+                }
+            }
+        }
+        h3 {
+            font-family: var(--fontart2);
+            color: var(--white);
+            font-weight: bold;
+            text-transform: capitalize;
+            margin-bottom: 0;
+            padding: 30px 0;
+            @media #{$lg-layout} {                                       
+                padding: 20px 0;   
+            }
+        }
+        .follower-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 40px;
+            @media #{$lg-layout} {                                       
+                margin-bottom: 30px; 
+            }
+            .follower {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: var(--fontkitchen2);
+                    color: var(--white);
+                    font-weight: bold;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px; 
+                    border-radius: 50%;
+                    background: linear-gradient(to right, #F2B872, #FE3C04);
+                    &:hover {
+                        background: linear-gradient(to left, #F2B872, #FE3C04);
+                    }
+                }
+                span {
+                    font-family: var(--fontkitchen2);
+                    color: var(--white);   
+                    margin-top: 10px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .roi-profit {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            background-color: #230069;
+            border-radius: 20px;
+            @media #{$lg-layout} {                                       
+                gap: 5px;        
+            }
+            a {
+                font-family: var(--fontart2);
+                color: var(--white);
+                font-size: 18px;
+                line-height: 60px;
+            }
+        }
+    }
+}
+/*--- end tipsters ---*/
+/*--- popular betting ---*/
+.popular-betting {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../images/service/popular-betting-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media #{$lg-layout} {                                       
+        padding-top: 80px;
+        padding-bottom: 80px;         
+    }
+    @media #{$md-layout} {                                       
+        padding-top: 60px;
+        padding-bottom: 60px;         
+    }
+    @media #{$xs-layout} {                                       
+        padding-top: 50px;
+        padding-bottom: 50px;         
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(53, 0, 123, 0.6);
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 0;
+    }
+    .betting-wrapper {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 0px;   
+    }
+    .button-betting-wrapper {
+        position: relative;
+        z-index: 1; 
+    }
+}
+/*--- end popular betting ---*/
+.subscribe-active{
+    .owl-dots{
+        position: relative;
+        right: 0;
+        height: 0;
+        .owl-dot {
+            display: inline;
+            span {
+                margin: 5px;
+            }
+        }
+    }
+}
+
+
+@media #{$ms-layout} {
+    .row {
+        margin: 0;
+    }
+}
+
+.main-sidebar-right {
+    margin-left: 375px;
+    @media #{$xx-layout} {
+        margin-left: 275px;
+    }
+    @media #{$xl-layout} {
+        margin-left: 270px;
+    }
+    @media #{$lg-layout} {
+        margin-left: 250px;
+    }
+    @media #{$md-layout} {
+        margin-left: 0px;
+    }
+    @media #{$xs-layout} {
+        margin-left: 0px;
+    }
+}
+
+.empty-cart-content {
+    img {
+        max-width: 100%;
+    }
+    h3 {
+        font-size: 24px;
+        text-transform: uppercase;
+        margin: 40px 0 40px;
+        color: #262626;
+        @media #{$xs-layout}{
+            font-size: 18px;
+            margin: 30px 0 30px;
+        }
+    }  
+}
+
+.error-content {
+    @media #{$xs-layout} {
+        padding: 0 15px;
+    }
+    h1 {
+        font-size: 250px;
+        color: var(--black);
+        margin: 0;
+        font-family: var(--fonttitle);
+        @media #{$xl-layout} {
+            font-size: 220px;
+        }
+        @media #{$lg-layout} {
+            font-size: 220px;
+        }
+        @media #{$md-layout} {
+            font-size: 200px;
+        }
+        @media #{$xs-layout} {
+            font-size: 140px;
+        }       
+    }
+    h2{     
+        color: var(--black);
+        margin: 0px 0 50px; 
+        padding: 0;        
+        @media #{$xs-layout} {          
+            margin: 10px 0 30px;
+        }
+        @media #{$sm-layout} {          
+            margin: 10px 0 30px;
+        }
+    }
+}
+
+.single-store {
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: capitalize;
+        line-height: 28px;
+        margin-bottom: 20px;
+        @media #{$xs-layout} {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+    }
+    ul {
+        li {
+            margin-bottom: 5px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+
+            }
+        }
+    }
+    @media #{$md-layout} {
+        &.mb-50 {
+            margin-bottom: 40px;
+        }
+    }
+    @media #{$xs-layout} {
+        &.mb-50 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media #{$md-layout} {
+    .store-area {
+        &.pb-70 {
+            padding-bottom: 30px;
+        }
+    }
+}
+@media #{$xs-layout} {
+    .store-area {
+        &.pb-70 {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+
+
+
+
+

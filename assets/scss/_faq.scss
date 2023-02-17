@@ -1,0 +1,260 @@
+/*-------- 31. Faq style ---------*/
+/*--- faq ---*/
+.frequently-area {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media #{$lg-layout} {                                       
+        padding-top: 80px;
+        padding-bottom: 80px;         
+    }
+    @media #{$md-layout} {                                       
+        padding-top: 60px;
+        padding-bottom: 60px;         
+    }
+    @media #{$xs-layout} {                                       
+        padding-top: 50px;
+        padding-bottom: 50px;         
+    }
+    .frequently-content {
+        position: relative;
+        z-index: 1;
+        span {
+            display: block;
+            font-family: var(--fontart2);
+            color: #FE3C04;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+        }
+        h2 {
+            font-family: var(--fontart2);
+            color: var(--white);
+            font-weight: bold;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            max-width: 300px;
+            font-family: var(--fontkitchen2);
+            color: var(--white);
+            text-transform: capitalize;
+            margin-bottom: 50px;
+        }
+    }
+    .accordion {
+        .accordion-item {
+            background-color: transparent;
+            border-radius: 0;
+            border: none;
+            border-bottom: 1px solid #18094d;
+            .accordion-header {
+                .accordion-button {
+                    font-family: var(--fontart2);
+                    font-size: 24px;
+                    line-height: 34px;
+                    font-weight: bold;
+                    color: var(--white);
+                    background-color: transparent;
+                    box-shadow: none;
+                    border-radius: 0;
+                    padding: 1rem 0;
+                    &:after {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+                    }
+                }
+            }
+            .accordion-body {
+                font-family: var(--fontfashion);
+                font-size: 16px;
+                line-height: 26px;
+                text-transform: capitalize;
+                padding: 1rem 0;
+                color: var(--white);
+            }
+        }
+    }
+    .faq-images {
+        margin-left: 50px;
+    }
+}
+/*--- end faq ---*/
+.faq-title {
+    h2 {
+        font-weight: bold;
+        font-size: 32px;
+        margin: 0 0 42px;
+        color: #000;
+        text-transform: uppercase;
+        @media #{$md-layout} {
+            font-size: 25px;
+            margin: 0 0 20px;
+        }
+        @media #{$xs-layout} {
+            font-size: 25px;
+            margin: 0 0 20px;
+        }
+    }
+}
+
+.faq-accordion {
+    border-radius: 0px;
+    background-color: #fff;
+    .panel-heading {
+        h4 {
+            font-size: 14px;
+            margin: 0;
+            background-color: var(--white);
+            a {
+                letter-spacing: 0.6px;
+                color: var(--black2);
+                font-size: 16px;
+                display: block;
+                position: relative;
+                padding: 15px 0;
+                font-weight: 600;
+                border-bottom: 1px solid #f2f2f2;
+                font-family: var(--fontprimary);
+                @media #{$xs-layout} {
+                    padding: 15px 30px 15px 15px;
+                    font-size: 16px;
+                }
+                &.collapsed {
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        right: 13px;
+                        height: 2px;
+                        background-color: #111111;
+                        width: 12px;
+                        top: 50%;
+                        margin-top: -2px;
+                        content: "";
+                        transition: all .3s ease 0s;
+                    }
+                    &::after {
+                        content: "";
+                        width: 2px;
+                        height: 12px;
+                        position: absolute;
+                        background-color: #111111;
+                        top: 49%;
+                        transform: translateY(-50%);
+                        right: 18px;
+                        transition: all .3s ease 0s;
+                    }
+                }
+                &::before {
+                    position: absolute;
+                    right: 13px;
+                    height: 2px;
+                    background-color: #343538;
+                    width: 12px;
+                    top: 50%;
+                    margin-top: -2px;
+                    content: "";
+                    transition: all .3s ease 0s;
+                }
+            }
+        }
+    }
+    .panel-collapse {
+        .panel-body {
+            p {
+                line-height: 26px;
+                font-size: 16px;
+                margin: 0;
+                color: #666666;
+                padding: 30px;
+                letter-spacing: 0.6px;
+                font-family: var(--fonttitle);
+                background: #f9f9f9;
+                margin-top: 30px;
+                @media #{$lg-layout} {
+                    padding: 30px;
+                }
+                @media #{$md-layout} {
+                    padding: 20px;
+                }
+                @media #{$xs-layout} {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+.single-faq-wrap {
+    @media #{$md-layout} {
+        &.pt-120 {
+            padding-top: 70px;
+        }
+        &.pb-100 {
+            padding-bottom: 60px;
+        }
+    }
+    @media #{$md-layout} {
+        .faq-title {
+            &.mb-60 {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    @media #{$xs-layout} {
+        &.pt-120 {
+            padding-top: 50px;
+        }
+        &.pb-100 {
+            padding-bottom: 30px;
+        }
+    }
+    @media #{$xs-layout} {
+        .faq-title {
+            h2 {
+                font-size: 21px;
+            }
+            &.mb-60 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.faq-area {
+    .single-faq-wrap {
+        .faq-tab-list {
+            a {
+                font-size: 20px;
+                font-weight: 700;
+                color: var(--colormain);
+                text-transform: capitalize;
+                padding: 10px 0px;
+                position: relative;
+                margin: 0 20px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background: var(--colormain);
+                    height: 2px;
+                    width: 100%;
+                    opacity: 0;
+                    transition: .3s;
+                }
+                &.active {
+                    color: var(--black2);  
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
